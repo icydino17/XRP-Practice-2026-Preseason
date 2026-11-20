@@ -16,10 +16,10 @@ public class AutonomousTime extends SequentialCommandGroup {
    * @param drivetrain The drive subsystem on which this command will run
    */
   public AutonomousTime(Drivetrain drivetrain) {
-    addCommands(
-        new DriveTime(-0.6, 2.0, drivetrain),
-        new TurnTime(-0.5, 1.3, drivetrain),
-        new DriveTime(-0.6, 2.0, drivetrain),
-        new TurnTime(0.5, 1.3, drivetrain));
+    addCommands( 
+        new TurnTime(1, 1.5, drivetrain),
+        new DriveTime(1, 3.5, drivetrain),
+        new DriveTime(1, 2.0, drivetrain),
+        new TurnTime(1, 1.3, drivetrain));
   }
 }
